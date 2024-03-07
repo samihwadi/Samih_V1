@@ -5,6 +5,20 @@
 
 html, body {
     box-sizing: border-box;
+    background-color: var(--color-bg);
+    font-size: 16px;
+}
+
+:root {
+    --color-bg: #f5f0f0;
+    --color-accent: #bf5d54;
+    --color-text: #000;
+    --heading-font: "Josefin Sans", sans-serif;
+    --text-font: "Cardo", serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 #logo img {
@@ -12,7 +26,19 @@ html, body {
     height: 25px;
 }
 
+p {
+    font-family: var(--text-font);
+}
+
+h2 {
+    font-family: var(--heading-font);
+}
+
 img {
     width: 200px;
     height: 200px;
+}
+ 
+.text-box li {
+    list-style-type: none;
 }
