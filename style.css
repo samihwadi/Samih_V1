@@ -10,28 +10,53 @@ html, body {
 }
 
 :root {
-    --color-bg: #f5f0f0;
-    --color-accent: #bf5d54;
-    --color-text: #000;
-    --heading-font: "Josefin Sans", sans-serif;
-    --text-font: "Cardo", serif;
+    --color-bg: #27374D;
+    --color-accent: #26ffd4;
+    --color-text:#91afc8;
+    --color-text-light: #9cbed7; 
+    --heading-font: "Rubik", sans-serif;
+    --text-font: "Assistant", sans-serif; 
 }
 
 a {
+    color: inherit;
     text-decoration: none;
 }
 
-#logo img {
-    width: 25px;
-    height: 25px;
+a:after {
+    color: inherit;
+}
+
+strong {
+    color: var(--color-accent);
+}
+
+#logo svg {
+    width: 40px;
+    height: 40px;
+}
+
+button, small, li {
+    font-family: var(--text-font);
 }
 
 p {
     font-family: var(--text-font);
+    font-weight: 300;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 75;
+    color: var(--color-text);
+
 }
 
-h2 {
+h2, h3 {
     font-family: var(--heading-font);
+    color: var(--color-text-light);
+}
+
+small, li {
+    color: var(--color-text);
 }
 
 img {
@@ -41,4 +66,8 @@ img {
  
 .text-box li {
     list-style-type: none;
+}
+
+span {
+    color: var(--color-accent);
 }
