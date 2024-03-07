@@ -34,6 +34,12 @@ a:after{
     color: inherit;
 }
 
+#email_button a{
+    color: var(--color-accent);
+    font-family: var(--text-font);
+
+}
+
 strong{
     color: var(--color-accent);
 }
@@ -46,6 +52,7 @@ button{
     color: var(--color-accent);
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 button, small, li{
@@ -103,6 +110,7 @@ nav li{
 }
 
 nav a{
+    font-size: 1.2rem;
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -212,7 +220,36 @@ nav li:first-child{
 }
 
 .sub-nav-container{
-    margin-top: 20%;
+    margin: 18% auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#intro-container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+#intro-container .text-big{
+    font-size: 1.5em;
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+
+#sub-nav-primary{
+    justify-self: end;
+    align-self: flex-end;
+}
+
+#sub-nav-primary p{
+    font-family: var(--heading-font);
+    font-size: 4rem;
+    font-weight: 600;
 }
 
 img{
