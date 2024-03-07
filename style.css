@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    box-sizing: border-box;
+}
+
+#logo img {
+    width: 25px;
+    height: 25px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
