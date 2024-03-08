@@ -11,7 +11,7 @@ html, body{
 }
 
 :root{
-    --color-bg: #27374D;
+    --color-bg: #182230;
     --color-accent: #26ffd4;
     --color-text:#91afc8;
     --color-text-light: #9cbed7; 
@@ -333,7 +333,7 @@ section {
     flex-grow: 0; 
     flex-shrink: 0; 
     width: 40%;
-    max-width: 300px;
+    max-width: 350px;
     margin-left: 10%;
 }
 
