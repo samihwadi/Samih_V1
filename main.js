@@ -11,10 +11,14 @@ window.addEventListener('scroll', function() {
 });
 
 const sidebar = document.querySelector('.sidebar');
+const emailBtn = document.getElementById('email-btn');
 function showSidebar(){
     sidebar.style.display = 'flex';
+    emailBtn.style.display = 'none';
 }
 
 function hideSidebar(){
     sidebar.style.display = 'none'; 
+    emailBtn.style.display = 'flex';
+
 }
