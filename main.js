@@ -21,3 +21,16 @@ function hideSidebar(){
     sidebar.style.display = 'none'; 
     emailBtn.style.display = 'flex';
 }
+const timelines = document.querySelectorAll('.timeline')
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            timelines.forEach(item => {
+                item.classList.add('show');
+            });
+        }
+    });
+});
+
+const timelinesContainer = document.querySelectorAll('.timeline-container');
+timelinesContainer.forEach(el => observer.observe(el));
