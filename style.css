@@ -19,6 +19,20 @@ html, body{
     --text-font: "Assistant", sans-serif; 
 }
 
+::-webkit-scrollbar{
+    color: var(--color-bg);
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-text);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent);
+}
+
 #logo{
     font-size: 1.6rem;
     font-weight: 600;
