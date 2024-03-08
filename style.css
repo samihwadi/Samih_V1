@@ -81,7 +81,6 @@ span{
     width: 100%;
     top: 0;
     background-color: var(--color-bg);
-    box-shadow: 5px 5px 14px -11px #26FFD4;
     transition: top 0.5s;
 }
 nav ul{
@@ -244,7 +243,7 @@ main{
 
 #email-button {
     border: 0.5px solid var(--color-accent);
-    width: 30%;
+    width: 40%;
     align-self: center;
     margin-top: 4px;
     border-radius: 5px;
@@ -278,8 +277,12 @@ main{
     height: 100%;
 }
 
-#email-button a:hover {
+#email-button a p:hover {
     color: #394d6c;
+}
+
+.mail-icon{
+    display: none;
 }
 
 img{
@@ -293,6 +296,24 @@ footer{
     color: var(--color-text);
 }
 
+@media(max-width: 1030px){
+    .sub-nav-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    #sub-nav-primary{
+        justify-self: center;
+        align-self: center;
+    }
+
+    #intro-container{
+        margin-bottom: 8px;
+    }
+}
+
 @media(max-width: 580px){
     .hideOnMobile{
         display: none;
@@ -303,5 +324,25 @@ footer{
     }
     .sidebar{
         width: 60%;
+    }
+
+    #email-button{
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #email-button a p{
+        display: none;
+    }
+
+    .mail-icon{
+        display: block;
+        align-self: center;
+    }
+
+    #intro-container{
+        width: 80%;
     }
 }
