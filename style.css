@@ -79,7 +79,7 @@ small, li{
 }
 
 .text-box li{
-    list-style-type: none;
+    list-style-type: circle;
 }
 
 span{
