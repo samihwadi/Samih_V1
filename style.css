@@ -241,7 +241,7 @@ main{
     font-weight: 600;
 }
 
-#email-button {
+#email-btn {
     border: 0.5px solid var(--color-accent);
     width: 40%;
     align-self: center;
@@ -250,18 +250,18 @@ main{
     padding: 2px;
     overflow: hidden;
     position: relative; 
+    cursor: pointer;
 }
 
-#email-button a {
+#email-btn a {
     display: block; 
     position: relative; 
-    z-index: 1; 
     color: var(--color-text-light);
     font-family: var(--heading-font);
     padding: 3px;
 }
 
-#email-button::before {
+#email-btn::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -273,11 +273,11 @@ main{
     transition: height 0.4s ease;
 }
 
-#email-button:hover::before {
+#email-btn:hover::before {
     height: 100%;
 }
 
-#email-button a p:hover {
+#email-btn a p:hover {
     color: #394d6c;
 }
 
@@ -326,14 +326,14 @@ footer{
         width: 60%;
     }
 
-    #email-button{
+    #email-btn{
         margin-top: 3%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    #email-button a p{
+    #email-btn a p{
         display: none;
     }
 
