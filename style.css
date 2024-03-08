@@ -219,7 +219,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: left;
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
 }
 
@@ -244,8 +244,8 @@ main{
 #email-btn {
     border: 0.5px solid var(--color-accent);
     width: 40%;
-    align-self: center;
-    margin-top: 4px;
+    align-self: flex-start;
+    margin-top: 15px;
     border-radius: 5px;
     padding: 2px;
     overflow: hidden;
@@ -281,9 +281,32 @@ main{
     color: #394d6c;
 }
 
+#email-btn a p {
+    text-align: center;
+}
+
 .mail-icon{
     display: none;
 }
+
+/* About Section */
+.header-container{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    margin-bottom: 7%;
+}
+
+.header-line {
+    height: 1px;
+    width: 40%;
+    background-color: #45525e; 
+}
+
+.header-text h2{
+    font-size: 1.8rem;
+}
+
 
 img{
     width: 200px;
@@ -296,6 +319,7 @@ footer{
     color: var(--color-text);
 }
 
+/* Queries */
 @media(max-width: 1030px){
     .sub-nav-container{
         flex-direction: column;
@@ -311,6 +335,16 @@ footer{
 
     #intro-container{
         margin-bottom: 8px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #email-btn {
+        align-self: center;
+    }
+
+    #email-btn a p{
+        text-align: center;
     }
 }
 
