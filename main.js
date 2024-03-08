@@ -20,5 +20,4 @@ function showSidebar(){
 function hideSidebar(){
     sidebar.style.display = 'none'; 
     emailBtn.style.display = 'flex';
-
 }
