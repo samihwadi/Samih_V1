@@ -290,6 +290,10 @@ main{
 }
 
 /* About Section */
+
+section {
+    margin: 20% auto;
+}
 .header-container{
     display: flex;
     justify-content: start;
@@ -307,11 +311,45 @@ main{
     font-size: 1.8rem;
 }
 
-
-img{
-    width: 200px;
-    height: 200px;
+#about-info-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
 }
+
+#about-info-text{
+    flex-grow: 1;
+}
+
+#about-info-text p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#about-me-pic{
+    padding-top: 7px;
+    flex-grow: 0; 
+    flex-shrink: 0; 
+    width: 40%;
+    max-width: 300px;
+    margin-left: 10%;
+}
+
+#about-me-pic img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#about-me-pic img:hover{
+    border: solid var(--color-accent);
+    box-shadow: 1px 2px 12px -4px #26ffd4;
+    transform: translateY(-8px);
+    transition: 0.3s ease;
+}
+
 
 
 footer{
@@ -346,6 +384,15 @@ footer{
     #email-btn a p{
         text-align: center;
     }
+
+    #about-info-container{
+        flex-direction: column;
+    }
+
+    #about-me-pic{
+        margin-top: 10%;
+        align-self: center;
+    }
 }
 
 @media(max-width: 580px){
@@ -378,5 +425,13 @@ footer{
 
     #intro-container{
         width: 80%;
+    }
+
+    #about-me-pic{
+        display: none;
+    }
+
+    .header-text h2{
+        font-size: 1.3rem;
     }
 }
