@@ -5,7 +5,8 @@ const topbar = document.querySelector('.topbar');
 const hamburger = document.querySelector('.menu-btn');
 const emailBtn = document.getElementById('email-btn');
 const timelines = document.querySelectorAll('.timeline')
-const timelinesContainer = document.querySelectorAll('.timeline-container');
+const timelinesContainerList = document.querySelectorAll('.timeline-container');
+const timelinesContainer = document.querySelector('.timeline-container');
 window.addEventListener('scroll', function() {
     var scrollTop = window.scrollY || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
@@ -46,8 +47,9 @@ const observer = new IntersectionObserver((entries) => {
             timelines.forEach(item => {
                 item.classList.add('show');
             });
+            timelinesContainer.classList.add('line-down');
         }
     });
 });
 
-timelinesContainer.forEach(el => observer.observe(el));
+timelinesContainerList.forEach(el => observer.observe(el));
