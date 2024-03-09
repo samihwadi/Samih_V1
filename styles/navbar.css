@@ -35,7 +35,7 @@ nav li:hover{
 }
 
 nav li:not(:first-child):hover {
-    background-color: #334764;
+    background-color: #202023;
 }
 
 nav li:first-child{

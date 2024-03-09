@@ -90,8 +90,8 @@ span{
     color: var(--color-accent);
 }
 
-nav a, #about-info-text p, .text-box li {
-    font-size: 1.2rem;
+nav a, #about-info-text p{
+    font-size: 1.3rem;
 }
 
 /* Queries */
