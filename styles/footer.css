@@ -1,0 +1,6 @@
+@import url('main.css');
+
+footer{
+    font-family: var(--text-font);
+    color: var(--color-text);
+}
