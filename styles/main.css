@@ -141,7 +141,11 @@ nav a, #about-info-text p, .text-box li {
         margin: 2%;
     }
     .sidebar{
-        width: 60%;
+        width: 80%;
+    }
+
+    nav a {
+        padding: 2px 15px;
     }
 
     #email-btn{
@@ -170,5 +174,11 @@ nav a, #about-info-text p, .text-box li {
 
     .header-text h2{
         font-size: 1.3rem;
+    }
+
+    #about-info-text p{
+        font-size: 1.1rem;
+        line-height: 1.4;
+        margin-bottom: 5px;
     }
 }

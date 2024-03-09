@@ -6,8 +6,8 @@
     align-items: center;
     width: 100%;
     top: 0;
-    background-color: var(--color-bg);
     transition: top 0.5s;
+    z-index: 5;
 }
 nav ul{
     width: 100%;
@@ -102,15 +102,14 @@ nav li:first-child{
 
 .sidebar{
     padding-top: 5%;
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
     height: 100vh;
     width: 250px;
-    z-index: 999;
-    background-color: #27374d00;
-    backdrop-filter: blur(7px);
-    box-shadow: -1px 0px 10px #26FFD4;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    box-shadow: -1px 0px 10px #c3073fbd;
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -123,6 +122,10 @@ nav li:first-child{
 
 .sidebar a{
     width: 100%;
+}
+
+.topbar{
+    align-self: flex-start;
 }
 
 /* Sub-nav */
