@@ -7,11 +7,12 @@ main{
 section {
     margin: 20% auto;
 }
+
 .header-container{
     display: flex;
     justify-content: start;
     align-items: end;
-    margin-bottom: 7%;
+    margin: 7% auto;
 }
 
 .header-line {
@@ -25,6 +26,7 @@ section {
 }
 
 #about-info-container{
+    opacity: 0;
     display: flex;
     justify-content: space-between;
     align-items: start;
