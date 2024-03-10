@@ -27,7 +27,6 @@ section {
 }
 
 #about-info-container{
-    /* opacity: 0; */
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -201,3 +200,73 @@ section {
 }
 
 /* Projects */
+.projects-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.projects-container p {
+    opacity: 0;
+}
+
+.project-card {
+    opacity: 0;
+    flex: 1;
+    border-radius: 10px;
+    text-align: center;
+    background: #24334930;
+    /* width: 100px; */ /* Remove fixed width */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.project-name {
+    margin-top: auto;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    color: var(--color-accent);
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.project-card .tools {
+    letter-spacing: 3px;
+    margin-top: auto;
+    color: #c3073fae;
+}
+
+.project-card .project-info {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.project-2 {
+    margin: 0 30px;
+}
+
+a {
+    display: none;
+    align-self: end;
+}
+
+.git-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.project-card:hover a {
+    display: inline;
+}
+
+.project-card:hover {
+    box-shadow: 1px 2px 12px -4px #d42f66ab;
+    transform: translateY(-8px);
+    transition: 0.1s ease;
+}
