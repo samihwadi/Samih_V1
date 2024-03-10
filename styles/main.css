@@ -168,6 +168,10 @@ nav a, #about-info-text p{
         align-self: center;
     }
 
+    .experience .header-text h2{
+        font-size: 1.1rem;
+    }
+
     .projects-container {
         flex-direction: column;
     }
