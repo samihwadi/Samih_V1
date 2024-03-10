@@ -181,4 +181,32 @@ nav a, #about-info-text p{
         line-height: 1.4;
         margin-bottom: 5px;
     }
+
+    .text-box, .text-box li{
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .right-content, .left-content{
+        left: 8px;
+    }
+
+    .timeline-dot{
+        right: 98%;
+    }
+
+    .left-arrow, .right-arrow{
+        border-left: 0;
+        border-right: 10px solid var(--color-accent);
+        left: -8.5px;
+    }
+
+    .line-down::after{
+        top: 3px;
+        right: 100%;
+    }
+
+    .experience-info-container{
+        width: 100%;
+    }
 }
