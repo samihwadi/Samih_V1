@@ -178,6 +178,15 @@ nav a, #about-info-text p{
         flex-grow: 1; 
     }
 
+    .project-card a {
+        display: inline;
+    }
+
+    .git-icon {
+        width: 18px;
+        height: 18px;
+    }
+
     .project-card .project-info {
         font-size: 0.8rem;
     }
