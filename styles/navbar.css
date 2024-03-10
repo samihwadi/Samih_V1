@@ -111,8 +111,8 @@ nav li:first-child{
     height: 100vh;
     width: 250px;
     z-index: 99;
-    backdrop-filter: blur(10px);
-    box-shadow: -1px 0px 10px #c3073fbd;
+    background-color: var(--color-bg);
+    box-shadow: -1px 0px 10px #c3073f4f;
     display: none;
     flex-direction: column;
     align-items: flex-start;
