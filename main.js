@@ -8,6 +8,7 @@ const timelines = document.querySelectorAll('.timeline')
 const timelinesContainerList = document.querySelectorAll('.timeline-container');
 const timelinesContainer = document.querySelector('.timeline-container');
 const aboutSection = document.getElementById('about-info-container');
+const allSections = document.querySelectorAll('section');
 window.addEventListener('scroll', function() {
     var scrollTop = window.scrollY || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
@@ -49,9 +50,21 @@ const observerExp = new IntersectionObserver((entries) => {
                 item.classList.add('show');
             });
             timelinesContainer.classList.add('line-down');
-            aboutSection.style.animation = 'fadeInText 1.7s forwards';
         }
     });
 });
 
 timelinesContainerList.forEach(el => observerExp.observe(el));
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            allSections.forEach(section => {
+                section.style.animation = 'fadeInText 1.7s forwards';
+            });
+        }
+    });
+});
+
+allSections.forEach(el => observer.observe(el));
+

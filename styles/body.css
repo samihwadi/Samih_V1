@@ -6,6 +6,7 @@ main{
 }
 section {
     margin: 20% auto;
+    opacity: 0;
 }
 
 .header-container{
@@ -26,7 +27,7 @@ section {
 }
 
 #about-info-container{
-    opacity: 0;
+    /* opacity: 0; */
     display: flex;
     justify-content: space-between;
     align-items: start;
