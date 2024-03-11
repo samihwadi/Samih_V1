@@ -105,17 +105,24 @@ nav a, #about-info-text p{
     animation-delay: 0s;
 }
 
-.topbar li:nth-child(2), .project-card:nth-child(1), .projects-container p:nth-child(2){
+.topbar li:nth-child(2), 
+.topbar li:nth-child(3),  
+.topbar li:nth-child(4){
+    animation: fadeInText 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.project-card:nth-child(1), .projects-container p:nth-child(2){
     animation: fadeInText 2s forwards;
     animation-delay: 0.5s;
 }
 
-.topbar li:nth-child(3), .project-card:nth-child(2), .projects-container p:nth-child(3){
+.project-card:nth-child(2), .projects-container p:nth-child(3){
     animation: fadeInText 2s forwards;
     animation-delay: 1s;
 }
 
-.topbar li:nth-child(4), .project-card:nth-child(3), .projects-container p:nth-child(4){
+.project-card:nth-child(3), .projects-container p:nth-child(4){
     animation: fadeInText 2s forwards;
     animation-delay: 1.5s;
 }
@@ -213,7 +220,8 @@ nav a, #about-info-text p{
         margin: 2%;
     }
     .sidebar{
-        width: 80%;
+        width: 60%;
+        position: fixed;
     }
 
     nav a {
@@ -252,6 +260,7 @@ nav a, #about-info-text p{
         font-size: 1.1rem;
         line-height: 1.4;
         margin-bottom: 5px;
+        text-align: center;
     }
 
     .text-box, .text-box li{
