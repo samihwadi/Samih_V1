@@ -192,6 +192,11 @@ section {
 
 .text-box li {
     font-size: 1.2rem;
+    list-style-type: circle;
+}
+
+.text-box li::marker {
+    color: var(--color-accent);
 }
 
 .left-arrow{

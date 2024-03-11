@@ -82,10 +82,6 @@ small, li{
     color: var(--color-text);
 }
 
-.text-box li{
-    list-style-type: circle;
-}
-
 span{
     color: var(--color-accent);
 }
@@ -209,6 +205,11 @@ nav a, #about-info-text p{
     .project-2{
         margin: 20px 0;
     }
+
+    .socials{
+        top: 90%;
+        right: 0;
+    }
 }
 
 @media(max-width: 580px){
@@ -289,5 +290,27 @@ nav a, #about-info-text p{
 
     .experience-info-container{
         width: 100%;
+    }
+
+    .socials{
+        position:static;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+
+    .socials a{
+        margin: 0;
+    }
+    
+    .socials a i{
+        font-size: 1.1rem;
+    }
+
+    .footer-text{
+        display: flex;
+        justify-content: center;
+        font-size: 0.6em;
+        padding: 15px 0;
     }
 }

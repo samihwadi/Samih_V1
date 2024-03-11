@@ -208,7 +208,7 @@ main{
     height: 100%;
 }
 
-#email-btn a p:hover {
+#email-btn a:hover p{
     color: #394d6c;
 }
 
