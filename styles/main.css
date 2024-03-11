@@ -91,7 +91,7 @@ nav a, #about-info-text p{
 }
 
 /* Keyframes */
-.sub-nav-container, .menu-btn{
+.sub-nav-container, .menu-btn, .socials{
     opacity: 0;
     animation: fadeInText 2s forwards;
 }
