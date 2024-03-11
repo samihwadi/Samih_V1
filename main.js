@@ -9,24 +9,9 @@ const timelinesContainerList = document.querySelectorAll('.timeline-container');
 const timelinesContainer = document.querySelector('.timeline-container');
 const aboutSection = document.getElementById('about-info-container');
 const allSections = document.querySelectorAll('section');
-window.addEventListener('scroll', function() {
-    var scrollTop = window.scrollY || document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop) {
-        navbar.style.top = "-80px";
-    } else {
-        navbar.style.top = "0";
-        navbar.style.background = "var(--color-bg)";
-    }
-    if (sidebar.style.display == 'flex') {
-        navbar.style.background = "transparent";
-    } else {
-        navbar.style.background = "var(--color-bg)";
-    }
-    lastScrollTop = scrollTop;
-});
 
 function showSidebar(){
-    navbar.style.background = "transparent";
+    navbar.style.position = "fixed";
     sidebar.style.display = 'flex';
     emailBtn.style.display = 'none';
     hamburger.style.display = 'none';
@@ -35,7 +20,7 @@ function showSidebar(){
 }
 
 function hideSidebar(){
-    navbar.style.background = "var(--color-bg)";
+    navbar.style.position = "sticky";
     sidebar.style.display = 'none'; 
     emailBtn.style.display = 'flex';
     hamburger.style.display = 'flex';
