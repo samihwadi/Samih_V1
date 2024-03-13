@@ -269,6 +269,10 @@ nav a, #about-info-text p{
         text-align: center;
     }
 
+    .text-box h3{
+        text-align: center;
+    }
+
     .right-content, .left-content{
         left: 8px;
     }
