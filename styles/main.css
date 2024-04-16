@@ -266,7 +266,7 @@ nav a, #about-info-text p{
 
     .text-box, .text-box li{
         font-size: 0.9em;
-        text-align: center;
+        text-align: left;
     }
 
     .text-box h3{
