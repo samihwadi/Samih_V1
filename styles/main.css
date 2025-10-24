@@ -108,6 +108,10 @@ nav a, #about-info-text p{
     animation-delay: 0.5s;
 }
 
+.projects-container {
+    margin: 5% 0;
+}
+
 .project-card:nth-child(1), .projects-container p:nth-child(2){
     animation: fadeInText 2s forwards;
     animation-delay: 0.5s;
